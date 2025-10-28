@@ -8,10 +8,17 @@ import plotly.express as px
 
 # --------------------------
 # Paths
+# -------------------------
 # --------------------------
+# Paths
+# --------------------------
+# Use the current directory ('.') which is the root of your repo
+# where the script is running.
+MODEL_DIR = "."  
 
-RUL_MODEL_PATH = os.path.join(MODEL_DIR, "RUL_pipeline.pkl")
-FAILURE_MODEL_PATH = os.path.join(MODEL_DIR, "Failure_Probability_pipeline.pkl")
+# Or, simplify it completely:
+RUL_MODEL_PATH = "RUL_pipeline.pkl"
+FAILURE_MODEL_PATH = "Failure_Probability_pipeline.pkl"
 
 # --------------------------
 # Load Models Safely
@@ -198,4 +205,5 @@ with tab3:
             st.plotly_chart(chart, use_container_width=True)
 
         time.sleep(2)
+
 
