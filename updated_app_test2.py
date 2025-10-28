@@ -9,7 +9,7 @@ import plotly.express as px
 # --------------------------
 # Paths
 # --------------------------
-MODEL_DIR = r"C:\Users\Admin\Desktop\New folder (3)"
+
 RUL_MODEL_PATH = os.path.join(MODEL_DIR, "RUL_pipeline.pkl")
 FAILURE_MODEL_PATH = os.path.join(MODEL_DIR, "Failure_Probability_pipeline.pkl")
 
@@ -198,3 +198,4 @@ with tab3:
             st.plotly_chart(chart, use_container_width=True)
 
         time.sleep(2)
+
