@@ -6,4 +6,5 @@ plotly-express
 
 # Machine Learning dependencies (including the specific version used to save the model)
 scikit-learn==1.6.1 
+
 xgboost
